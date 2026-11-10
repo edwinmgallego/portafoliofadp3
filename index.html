@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio creativo de diseño digital y desarrollo web.">
+  <title>Inicio | A17.2 Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="site-header">
+      <a href="index.html" class="logo">A17.2</a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">About us</a>
+        <a href="portafolio.html">Projects</a>
+        <a href="portafolio.html#galeria">Gallery</a>
+        <a href="contacto.html" class="contact-link">Contact us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-label">
+          <p>Inside the mind<br>of a studio</p>
+        </div>
+
+        <div class="hero-content">
+          <h1>Exploring the craft, thinking,<br>
+              and impact of design</h1>
+        </div>
+      </section>
+
+      <section class="editorial-grid" aria-label="Artículos y proyectos destacados">
+
+        <article class="editorial-card card-identity">
+          <a href="portafolio.html">
+            <img src="img/proyecto-1.jpg"
+                 alt="Detalle de un producto de diseño"
+                 loading="lazy">
+            <div class="card-caption">
+              <h2>The power of visual identity</h2>
+              <p>Why good branding matters more than ever</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="editorial-card card-studio">
+          <a href="portafolio.html">
+            <img src="img/yo.jpg"
+                 alt="Retrato personal en el estudio"
+                 loading="lazy">
+            <div class="card-caption">
+              <h2>Behind the studio doors</h2>
+              <p>Our design process from brief to final</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="editorial-card card-color">
+          <a href="portafolio.html">
+            <img src="img/proyecto-3.jpg"
+                 alt="Composición abstracta de colores"
+                 loading="lazy">
+            <div class="card-caption">
+              <h2>Color trends 2025</h2>
+              <p>What's coming and how to use it well</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="editorial-card card-minimal">
+          <a href="portafolio.html">
+            <img src="img/proyecto-4.jpg"
+                 alt="Diseño arquitectónico minimalista"
+                 loading="lazy">
+            <div class="card-caption">
+              <h2>Minimalism isn't boring</h2>
+              <p>The art of saying more with less</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="editorial-card card-chaos">
+          <a href="portafolio.html">
+            <img src="img/proyecto-5.jpg"
+                 alt="Diseño abstracto monocromático"
+                 loading="lazy">
+            <div class="card-caption">
+              <h2>From chaos to clarity</h2>
+              <p>The role of grid systems in design</p>
+            </div>
+          </a>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 A17.2 Studio</p>
+      <a href="contacto.html">Let's work together</a>
+    </footer>
+
+  </div>
+</body>
+</html>

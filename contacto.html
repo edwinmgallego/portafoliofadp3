@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con A17.2 Studio.">
+  <title>Contacto | A17.2 Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="site-header">
+      <a href="index.html" class="logo">A17.2</a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="index.html">About us</a>
+        <a href="portafolio.html">Projects</a>
+        <a href="portafolio.html#galeria">Gallery</a>
+        <a href="contacto.html" class="contact-link" aria-current="page">Contact us</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="page-intro contact-intro">
+        <p class="eyebrow">Get in touch / Contact</p>
+        <h1>Great ideas start<br>with a conversation.</h1>
+        <p class="intro-description">
+          ¿Tienes un proyecto en mente?
+          Hablemos sobre cómo convertir tus ideas
+          en experiencias digitales.
+        </p>
+      </section>
+
+      <section class="contact-layout">
+
+        <div class="contact-information">
+          <div class="contact-photo">
+            <img src="img/yo.jpg"
+                 alt="Fotografía del creador del portafolio">
+          </div>
+
+          <h2>Let's connect.</h2>
+          <p>
+            Estoy disponible para colaborar en proyectos
+            de diseño, desarrollo web y tecnología.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Location</strong><br>Cali, Colombia</p>
+            <p><strong>Availability</strong><br>Open for projects</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h2>Send a message</h2>
+
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="nombre">Your name</label>
+              <input type="text"
+                     id="nombre"
+                     name="nombre"
+                     placeholder="Enter your name"
+                     autocomplete="name"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email"
+                     id="email"
+                     name="email"
+                     placeholder="Enter your email"
+                     autocomplete="email"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Subject</label>
+              <input type="text"
+                     id="asunto"
+                     name="asunto"
+                     placeholder="What's your project about?"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Your message</label>
+              <textarea id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Tell me about your idea..."
+                        required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Send message <span aria-hidden="true">↗</span>
+            </button>
+
+            <p id="form-feedback"
+               class="form-feedback"
+               role="status"
+               aria-live="polite"></p>
+
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 A17.2 Studio</p>
+      <a href="index.html">Back to home</a>
+    </footer>
+
+  </div>
+</body>
+</html>
